@@ -1,47 +1,139 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Khan AI Cartoons</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:linear-gradient(135deg,#0b1220,#020617);
+      color:white;
+      scroll-behavior:smooth;
+    }
+
+    header{
+      text-align:center;
+      padding:30px;
+      background:#111827;
+    }
+
+    header h1{
+      margin:0;
+      font-size:32px;
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      background:#1f2937;
+      text-align:center;
+      padding:12px;
+    }
+
+    nav a{
+      color:white;
+      margin:12px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .section{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .card{
+      background:#111827;
+      padding:25px;
+      margin:auto;
+      width:85%;
+      max-width:600px;
+      border-radius:15px;
+      box-shadow:0 0 15px rgba(255,255,255,0.08);
+    }
+
+    .btn{
+      margin-top:15px;
+      padding:12px 25px;
+      border:none;
+      border-radius:8px;
+      background:#22c55e;
+      color:white;
+      cursor:pointer;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#16a34a;
+      transform:scale(1.05);
+    }
+
+    a{
+      color:#38bdf8;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      margin-top:20px;
+    }
+  </style>
 </head>
 
-<body style="margin:0;font-family:Arial;background:#0b1220;color:white;text-align:center;">
+<body>
 
-<header style="padding:20px;background:#111827;">
+<header>
   <h1>🎬 Khan AI Cartoons</h1>
   <p>AI Videos | Cartoons | Entertainment</p>
 </header>
 
-<section style="padding:50px;">
-  <h2>🏠 Home</h2>
-  <p>Welcome to my AI Cartoon Website 🚀</p>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <a href="#about">
-    <button style="padding:12px 20px;background:#22c55e;border:none;color:white;border-radius:8px;">
+<!-- HOME -->
+<section id="home" class="section">
+  <div class="card">
+    <h2>🏠 Welcome</h2>
+    <p>AI cartoon videos aur creative content yahan milega 🚀</p>
+
+    <button class="btn" onclick="document.getElementById('about').scrollIntoView()">
       Continue ▶
     </button>
-  </a>
+  </div>
 </section>
 
-<section id="about" style="padding:50px;background:#0f172a;">
-  <h2>📌 About</h2>
-  <p>This website is for AI cartoon videos and entertainment content.</p>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="card">
+    <h2>📌 About</h2>
+    <p>Ye website AI cartoon videos, edits aur entertainment ke liye banayi gayi hai.</p>
+  </div>
 </section>
 
-<section style="padding:50px;">
-  <h2>📞 Contact</h2>
-  <p>Phone: +91 YOUR NUMBER</p>
-  <p>
-    Instagram: 
-    <a href="https://instagram.com/YOUR_USERNAME" style="color:#38bdf8;" target="_blank">
-      Click Here
-    </a>
-  </p>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="card">
+    <h2>📞 Contact</h2>
+    <p>Phone: +91 YOUR NUMBER</p>
+
+    <p>
+      Instagram: 
+      <a href="https://instagram.com/YOUR_USERNAME" target="_blank">
+        Click Here
+      </a>
+    </p>
+  </div>
 </section>
 
-<footer style="padding:15px;background:#111827;">
-  © 2026 Khan AI Cartoons
+<footer>
+  © 2026 Khan AI Cartoons | All Rights Reserved
 </footer>
 
 </body>
